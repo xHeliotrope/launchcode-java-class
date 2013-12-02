@@ -51,7 +51,9 @@ create table stop_times (
 
 create view metrolink_stops as 
 	select 	t.trip_headsign, 
-		s.stop_name, 
+		s.stop_name,
+                r.route_color,
+                r.route_type, 
 		st.stop_sequence, 
 		arrival_time, 
 		departure_time 
@@ -59,4 +61,4 @@ create view metrolink_stops as
 	join trips t on t.route_id = r.route_id 
 	join stop_times st on st.trip_id = t.trip_id 
 	join stops s on s.stop_id = st.stop_id 
-	where route_long_name = 'MetroLink';
+	where route_type = 2;
