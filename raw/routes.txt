@@ -1,153 +1,158 @@
-route_long_name,route_id,route_type,agency_id,route_color,route_short_name
-Gravois Lindell,10899,3,,808000,10
-Bates Morganford,10898,3,,FFFF00,8
-Natural Bridge,10897,3,,FF88FF,4
-Red,10896,3,,000080,2
-Gold,10895,3,,8000FF,1
-Spanish Lake,10813,3,,C0DCC0,36
-Rock Road,10812,3,,00D700,35
-Earth City,10811,3,,008000,34
-Dorsett-Lackland,10810,3,,FFFF00,33
-Hazelwood,10817,3,,00FF00,44
-Sarah,10816,3,,D200D2,42
-Lee,10815,3,,FFFF00,41
-Broadway,10814,3,,808000,40
-St Clair Square,10952,3,,FFFF00,16
-Kingshighway,10938,3,,7220DF,95
-Tesson Ferry,10819,3,,FF0000,46
-Ferguson Florissant,10818,3,,F5B50A,45
-MetroLink,10956,2,,FFFF00,Metrolink
-Scott AFB - Main Base Shuttle,10954,3,,0080FF,21
-Delmar,10939,3,,008000,97
-Clayton - Chesterfield,10967,3,,FF0000,258
-Fenton Gravois Bluffs,10966,3,,800080,210
-Halls Ferry Express,10965,3,,0080FF,174X
-Ballas - West County,10964,3,,8000FF,158
-Affton,10963,3,,FF0000,110
-Twin Oaks Express,10962,3,,008000,58X
-Clayton Rd,10961,3,,FF0000,57X
-I-55 Express,10960,3,,00FF00,40X
-Delmar,10839,3,,008000,97
-Waterloo - Columbia,10969,3,,FFFF00,2X
-Carondelet,10931,3,,53A9FF,73
-Soulard,10808,3,,FF00FF,30
-M L King Chouteau,10809,3,,008000,32
-Oakville,10804,3,,FF0000,17
-Taylor,10805,3,,00FF00,18
-Watson Rd.,10806,3,,F0CAA6,21
-North County Shuttle,10807,3,,FFFF00,27
-Gravois Lindell,10800,3,,808000,10
-Chippewa,10801,3,,F0CAA6,11
-Union,10802,3,,00FF00,13
-City Limits,10803,3,,FF9797,16
-Eureka Express,10968,3,,008000,410X
-Metrolink Station Shuttle,10970,3,,FFFF00,12X
-Lebanon - Mascoutah,10971,3,,0080FF,17X
-Scott AFB - East Base Shuttle,10972,3,,F0CAA6,21X
-Green Line,10973,3,,008000,GL
-Washington Park,10947,3,,FF00FF,9
-Lebanon - Mascoutah,10871,3,,0080FF,17X
-Metrolink Station Shuttle,10870,3,,FFFF00,12X
-Green Line,10873,3,,008000,GL
-Scott AFB - East Base Shuttle,10872,3,,F0CAA6,21X
-Waterloo - Columbia,10875,3,,FFFF00,2X
-Cahokia,10874,3,,FFFF00,2
-Botanical Garden,10877,3,,FF0000,14
-Alta Sita,10946,3,,00FF00,8
-Taylor,10905,3,,00FF00,18
-Bissell Hills Express,10959,3,,C080FF,36X
-Eureka Express,10868,3,,008000,410X
-Watson Rd.,10906,3,,F0CAA6,21
-Union,10901,3,,00FF00,13
-Chippewa,10900,3,,F0CAA6,11
-City Limits,10903,3,,FF9797,16
-Botanical Garden,10902,3,,FF0000,14
-Twin Oaks Express,10862,3,,008000,58X
-Affton,10863,3,,FF0000,110
-I-55 Express,10860,3,,00FF00,40X
-Clayton Rd,10861,3,,FF0000,57X
-Fenton Gravois Bluffs,10866,3,,800080,210
-Clayton - Chesterfield,10867,3,,FF0000,258
-Ballas - West County,10864,3,,8000FF,158
-Halls Ferry Express,10865,3,,0080FF,174X
-Natural Bridge,10798,3,,FF88FF,4
-Bates Morganford,10799,3,,FFFF00,8
-Gold,10795,3,,8000FF,1
-Red,10796,3,,000080,2
-MetroLink,10856,2,,FFFF00,Metrolink
-Scott AFB - Main Base Shuttle,10854,3,,0080FF,21
-Carlyle Plaza - 17th Street,10853,3,,00FF00,17
-St Clair Square,10852,3,,FFFF00,16
-Belleville - Shiloh Scott,10851,3,,FF00FF,15
-Memorial Hosp - Westfield Plaza,10850,3,,00FF00,14
-Bissell Hills Express,10859,3,,C080FF,36X
-Sarah,10916,3,,D200D2,42
-Hazelwood,10917,3,,00FF00,44
-Broadway,10914,3,,808000,40
-Lee,10915,3,,FFFF00,41
-Rock Road,10912,3,,00D700,35
-Spanish Lake,10913,3,,C0DCC0,36
-Dorsett-Lackland,10910,3,,FFFF00,33
-Earth City,10911,3,,008000,34
-Ferguson Florissant,10918,3,,F5B50A,45
-Tesson Ferry,10919,3,,FF0000,46
-Carlyle Plaza - 17th Street,10953,3,,00FF00,17
-Memorial Hosp - Westfield Plaza,10950,3,,00FF00,14
-Chesterfield Hanley,10840,3,,C69604,98
-Downtown Trolley,10841,3,,FF0000,99
-Main Street - State Street,10842,3,,00FF00,1
-Belleville - Shiloh Scott,10951,3,,FF00FF,15
-19th & Central - ML King,10844,3,,00FF00,4
-Rosemont - Fairmont City,10845,3,,FFFF00,6
-Alta Sita,10846,3,,00FF00,8
-Washington Park,10847,3,,FF00FF,9
-O'Fallon - Fairview Heights,10848,3,,FF0000,12
-Caseyville - Marybelle,10849,3,,808000,13
-Kirkwood Webster,10923,3,,40FF00,56
-North Lindbergh,10922,3,,8000FF,49
-South Lindbergh,10921,3,,007CF9,48
-North Hanley,10920,3,,008000,47
-Chambers Road,10927,3,,FF0000,61
-Dogtown,10926,3,,0080FF,59
-Clayton-Ballas,10925,3,,C080FF,58
-Maplewood Wildwood,10924,3,,FF0000,57
-Clayton Airport,10929,3,,FF0000,66
-Lucas Hunt,10928,3,,8080FF,64
-Dogtown,10826,3,,0080FF,59
-O'Fallon - Fairview Heights,10948,3,,FF0000,12
-Oakville,10904,3,,FF0000,17
-North County Shuttle,10907,3,,FFFF00,27
-Hampton,10835,3,,FF00FF,90
-Park Shaw,10834,3,,FFFF00,80
-Page,10837,3,,FF7D7D,94
-Olive,10836,3,,00FF00,91
-Carondelet,10831,3,,53A9FF,73
-Grand,10830,3,,808000,70
-Lilac Hanley,10833,3,,FF00FF,75
-Florissant,10832,3,,FFFF00,74
-Park Shaw,10934,3,,FFFF00,80
-Hampton,10935,3,,FF00FF,90
-Olive,10936,3,,00FF00,91
-Page,10937,3,,FF7D7D,94
-Grand,10930,3,,808000,70
-Kingshighway,10838,3,,7220DF,95
-Florissant,10932,3,,FFFF00,74
-Lilac Hanley,10933,3,,FF00FF,75
-M L King Chouteau,10909,3,,008000,32
-Soulard,10908,3,,FF00FF,30
-Caseyville - Marybelle,10949,3,,808000,13
-Chambers Road,10827,3,,FF0000,61
-Maplewood Wildwood,10824,3,,FF0000,57
-Clayton-Ballas,10825,3,,C080FF,58
-North Lindbergh,10822,3,,8000FF,49
-Kirkwood Webster,10823,3,,40FF00,56
-North Hanley,10820,3,,008000,47
-South Lindbergh,10821,3,,007CF9,48
-Downtown Trolley,10941,3,,FF0000,99
-Chesterfield Hanley,10940,3,,C69604,98
-Cahokia,10943,3,,FFFF00,2
-Main Street - State Street,10942,3,,00FF00,1
-Rosemont - Fairmont City,10945,3,,FFFF00,6
-19th & Central - ML King,10944,3,,00FF00,4
-Lucas Hunt,10828,3,,8080FF,64
-Clayton Airport,10829,3,,FF0000,66
+route_long_name,route_type,route_text_color,agency_id,route_id,route_color,route_short_name
+Clayton-Airport,3,000000,,11191,FFFFFF,66
+Lucas Hunt,3,000000,,11190,FFFFFF,64
+Carondelet,3,000000,,11193,FFFFFF,73
+Grand,3,000000,,11192,FFFFFF,70
+Lilac-Hanley,3,000000,,11195,FFFFFF,75
+Florissant,3,000000,,11194,FFFFFF,74
+Hampton,3,000000,,11197,FFFFFF,90
+Park-Shaw,3,000000,,11196,FFFFFF,80
+Page,3,000000,,11199,FFFFFF,94
+MetroLink Red Line,2,FFFFFF,,11218R,CC0033,MLR
+Bissell Hills Express,3,000000,,11053,FFFFFF,36X
+I-55 Express,3,000000,,11054,FFFFFF,40X
+Clayton Rd,3,000000,,11055,FFFFFF,57X
+Twin Oaks Express,3,000000,,11056,FFFFFF,58X
+Affton,3,000000,,11057,FFFFFF,110
+Ballas-West County,3,000000,,11058,FFFFFF,158
+MetroLink Blue Line,2,FFFFFF,,11218B,333399,MLB
+Olive,3,000000,,11198,FFFFFF,91
+North Hanley,3,000000,,11182,FFFFFF,47
+South Lindbergh,3,000000,,11183,FFFFFF,48
+Ferguson-Florissant,3,000000,,11180,FFFFFF,45
+Tesson Ferry,3,000000,,11181,FFFFFF,46
+Maplewood-Wildwood,3,000000,,11186,FFFFFF,57
+Clayton-Ballas,3,000000,,11187,FFFFFF,58
+North Lindbergh,3,000000,,11184,FFFFFF,49
+Kirkwood-Webster,3,000000,,11185,FFFFFF,56
+Dogtown,3,000000,,11188,FFFFFF,59
+Chambers Rd,3,000000,,11189,FFFFFF,61
+Carondelet,3,000000,,11025,FFFFFF,73
+Grand,3,000000,,11024,FFFFFF,70
+Lilac-Hanley,3,000000,,11027,FFFFFF,75
+Florissant,3,000000,,11026,FFFFFF,74
+Chambers Rd,3,000000,,11021,FFFFFF,61
+Dogtown,3,000000,,11020,FFFFFF,59
+Clayton-Airport,3,000000,,11023,FFFFFF,66
+Bates-Morganford,3,000000,,10992,FFFFFF,8
+Kirkwood-Webster,3,000000,,11017,FFFFFF,56
+Lucas Hunt,3,000000,,11022,FFFFFF,64
+Hampton,3,000000,,11029,FFFFFF,90
+Park-Shaw,3,000000,,11028,FFFFFF,80
+Delmar,3,000000,,11201,FFFFFF,97
+Kingshighway,3,000000,,11200,FFFFFF,95
+Downtown Trolley,3,000000,,11203,FFFFFF,99
+Chesterfield-Hanley,3,000000,,11202,FFFFFF,98
+Cahokia,3,000000,,11205,FFFFFF,2
+Main Street - State Street,3,000000,,11204,FFFFFF,1
+Rosemont-Fairmont City,3,000000,,11207,FFFFFF,6
+19th & Central - ML King,3,000000,,11206,FFFFFF,4
+Washington Park,3,000000,,11209,FFFFFF,9
+Alta Sita,3,000000,,11208,FFFFFF,8
+Main Street - State Street,3,000000,,11036,FFFFFF,1
+Cahokia,3,000000,,11037,FFFFFF,2
+Chesterfield-Hanley,3,000000,,11034,FFFFFF,98
+Downtown Trolley,3,000000,,11035,FFFFFF,99
+Kingshighway,3,000000,,11032,FFFFFF,95
+Delmar,3,000000,,11033,FFFFFF,97
+Olive,3,000000,,11030,FFFFFF,91
+Page,3,000000,,11031,FFFFFF,94
+19th & Central - ML King,3,000000,,11038,FFFFFF,4
+Rosemont-Fairmont City,3,000000,,11039,FFFFFF,6
+Natural Bridge,3,000000,,10991,FFFFFF,4
+Memorial Hosp-Westfield Plaza,3,000000,,11212,FFFFFF,14
+Belleville-Shiloh Scott,3,000000,,11213,FFFFFF,15
+O'Fallon-Fairview Heights,3,000000,,11210,FFFFFF,12
+Caseyville-Marybelle,3,000000,,11211,FFFFFF,13
+Scott AFB-Main Base Shuttle,3,000000,,11216,FFFFFF,21
+St Clair Square,3,000000,,11214,FFFFFF,16
+Carlyle Plaza-17th Street,3,000000,,11215,FFFFFF,17
+ML King-Chouteau,3,000000,,11003,FFFFFF,32
+Soulard,3,000000,,11002,FFFFFF,30
+Halls Ferry Express,3,000000,,11059,FFFFFF,174X
+Watson Rd,3,000000,,11000,FFFFFF,21
+Red,3,000000,,10989,FFFFFF,2
+Rock Road,3,000000,,11006,FFFFFF,35
+Earth City,3,000000,,11005,FFFFFF,34
+Dorsett-Lackland,3,000000,,11004,FFFFFF,33
+Lee,3,000000,,11009,FFFFFF,41
+Broadway,3,000000,,11008,FFFFFF,40
+North Hanley,3,000000,,11014,FFFFFF,47
+South Lindbergh,3,000000,,11015,FFFFFF,48
+North Lindbergh,3,000000,,11016,FFFFFF,49
+Union,3,000000,,10995,FFFFFF,13
+Spanish Lake,3,000000,,11007,FFFFFF,36
+Sarah,3,000000,,11010,FFFFFF,42
+Forest Park Trolley,3,000000,,11158,FFFFFF,3
+Ferguson-Florissant,3,000000,,11012,FFFFFF,45
+Fenton-Gravois Bluffs,3,000000,,11229,FFFFFF,210
+Halls Ferry Express,3,000000,,11228,FFFFFF,174X
+Ballas-West County,3,000000,,11227,FFFFFF,158
+Affton,3,000000,,11226,FFFFFF,110
+Twin Oaks Express,3,000000,,11225,FFFFFF,58X
+Clayton Rd,3,000000,,11224,FFFFFF,57X
+I-55 Express,3,000000,,11223,FFFFFF,40X
+Bissell Hills Express,3,000000,,11222,FFFFFF,36X
+Red,3,000000,,11157,FFFFFF,2
+Gold,3,000000,,11156,FFFFFF,1
+Maplewood-Wildwood,3,000000,,11018,FFFFFF,57
+Clayton-Ballas,3,000000,,11019,FFFFFF,58
+Oakville,3,000000,,10998,FFFFFF,17
+Taylor,3,000000,,10999,FFFFFF,18
+Botanical Garden,3,000000,,10996,FFFFFF,14
+City Limits,3,000000,,10997,FFFFFF,16
+Chippewa,3,000000,,10994,FFFFFF,11
+MetroLink Red Line,2,FFFFFF,,11050R,CC0033,MLR
+Natural Bridge,3,000000,,11159,FFFFFF,4
+Gravois-Lindell,3,000000,,10993,FFFFFF,10
+Forest Park Trolley,3,000000,,10990,FFFFFF,3
+Tesson Ferry,3,000000,,11013,FFFFFF,46
+MetroLink Blue Line,2,FFFFFF,,11050B,333399,MLB
+North County Shuttle,3,000000,,11001,FFFFFF,27
+Clayton-Chesterfield,3,000000,,11230,FFFFFF,258
+Eureka Express,3,000000,,11231,FFFFFF,410X
+Waterloo-Columbia,3,000000,,11232,FFFFFF,2X
+Metrolink Station Shuttle,3,000000,,11233,FFFFFF,12X
+Lebanon - Mascoutah,3,000000,,11234,FFFFFF,17X
+Scott AFB-East Base Shuttle,3,000000,,11235,FFFFFF,21X
+Green Line,3,000000,,11236,FFFFFF,GL
+Gold,3,000000,,10988,FFFFFF,1
+Clayton-Chesterfield,3,000000,,11061,FFFFFF,258
+Fenton-Gravois Bluffs,3,000000,,11060,FFFFFF,210
+Waterloo-Columbia,3,000000,,11063,FFFFFF,2X
+Eureka Express,3,000000,,11062,FFFFFF,410X
+Lebanon - Mascoutah,3,000000,,11065,FFFFFF,17X
+Metrolink Station Shuttle,3,000000,,11064,FFFFFF,12X
+Green Line,3,000000,,11067,FFFFFF,GL
+Scott AFB-East Base Shuttle,3,000000,,11066,FFFFFF,21X
+Earth City,3,000000,,11173,FFFFFF,34
+Dorsett-Lackland,3,000000,,11172,FFFFFF,33
+ML King-Chouteau,3,000000,,11171,FFFFFF,32
+Soulard,3,000000,,11170,FFFFFF,30
+Lee,3,000000,,11177,FFFFFF,41
+Broadway,3,000000,,11176,FFFFFF,40
+Spanish Lake,3,000000,,11175,FFFFFF,36
+Rock Road,3,000000,,11174,FFFFFF,35
+Muny Trolley,3,000000,,11072,FFFFFF,3X
+Hazelwood,3,000000,,11179,FFFFFF,44
+Sarah,3,000000,,11178,FFFFFF,42
+Carlyle Plaza-17th Street,3,000000,,11047,FFFFFF,17
+St Clair Square,3,000000,,11046,FFFFFF,16
+Belleville-Shiloh Scott,3,000000,,11045,FFFFFF,15
+Memorial Hosp-Westfield Plaza,3,000000,,11044,FFFFFF,14
+Caseyville-Marybelle,3,000000,,11043,FFFFFF,13
+O'Fallon-Fairview Heights,3,000000,,11042,FFFFFF,12
+Washington Park,3,000000,,11041,FFFFFF,9
+Alta Sita,3,000000,,11040,FFFFFF,8
+Scott AFB-Main Base Shuttle,3,000000,,11048,FFFFFF,21
+Watson Rd,3,000000,,11168,FFFFFF,21
+North County Shuttle,3,000000,,11169,FFFFFF,27
+Botanical Garden,3,000000,,11164,FFFFFF,14
+City Limits,3,000000,,11165,FFFFFF,16
+Oakville,3,000000,,11166,FFFFFF,17
+Taylor,3,000000,,11167,FFFFFF,18
+Bates-Morganford,3,000000,,11160,FFFFFF,8
+Gravois-Lindell,3,000000,,11161,FFFFFF,10
+Chippewa,3,000000,,11162,FFFFFF,11
+Union,3,000000,,11163,FFFFFF,13
+Hazelwood,3,000000,,11011,FFFFFF,44
