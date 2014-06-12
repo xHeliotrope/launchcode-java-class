@@ -14,7 +14,6 @@ public class OutputFactory {
         if (outputfactory == null) {
             outputfactory = new OutputFactory();
         }
-        System.out.println("AND went through here");
         return outputfactory;
     }
 

@@ -2,26 +2,26 @@
 package pset4;
 
 import java.io.*;
-
 import pset4.marioOutputs.*;
-
 import static java.lang.Integer.parseInt;
 
 public class Pyramid {
 
-    public static String pyramid;
+    private String pyramid;
+    private OutputFactory opFac1;
 
-    public Pyramid() {
-        System.out.println("went through here");
+    public Pyramid(OutputFactory opFac1){
+        this.opFac1 = opFac1;
+        newPyramid();
     }
 
-    public static void pyramidMaker() {
+    public void customPyramidMaker() {
         stepBuilder(inputReader());
         MarioFileWriter mfw = promptUser();
         mfw.outputTriangle(pyramid);
     }
 
-    public static int inputReader() {
+    public int inputReader() {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
             System.out.println("Please enter an integer between 0 and "
@@ -37,7 +37,7 @@ public class Pyramid {
         }
     }
 
-    public static void stepBuilder(int input) {
+    public void stepBuilder(int input) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i <= input; i++) {
             int j = i;
@@ -55,7 +55,7 @@ public class Pyramid {
         }
     }
 
-    public static MarioFileWriter promptUser() {
+    public MarioFileWriter promptUser() {
         while (true) {
             String def1 = "Console", def2 = "File";
             System.out.println("Do you want your Mario Pyramid in a file"
@@ -78,11 +78,14 @@ public class Pyramid {
             }
         }
     }
+    public void newPyramid(){
+        new Output("to the Console", pyramid, opFac1.toConsole(pyramid));
+        new Output("to the error", pyramid, opFac1.errorOutput());
+        new Output("to a File", pyramid, opFac1.toFile(pyramid));
+    }
 
     public static void main(String[] args) {
-        new Output("to the Console", OutputFactory.outFacInstance().toConsole(pyramid));
-        new Output("to the error", OutputFactory.outFacInstance().errorOutput());
-        new Output("to a File", OutputFactory.outFacInstance().toFile(pyramid));
+        Pyramid pyramid1 = new Pyramid(OutputFactory.outFacInstance());
 
     }
 }
