@@ -10,11 +10,9 @@ import static java.lang.Integer.parseInt;
 public class Pyramid {
 
     public static String pyramid;
-    private static Output output;
 
-    public Pyramid(Output output){
-        this.output = output;
-        System.out.println("AAAAND went through here");
+    public Pyramid() {
+        System.out.println("went through here");
     }
 
     public static void pyramidMaker() {
@@ -82,8 +80,8 @@ public class Pyramid {
     }
 
     public static void main(String[] args) {
-        pyramidMaker();
         new Output("to the Console", OutputFactory.outFacInstance().toConsole(pyramid));
+        new Output("to the error", OutputFactory.outFacInstance().errorOutput());
         new Output("to a File", OutputFactory.outFacInstance().toFile(pyramid));
 
     }
