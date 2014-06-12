@@ -5,15 +5,26 @@ import pset3.MarioFileWriter;
 
 public class OutputFactory {
 
-    public static MarioFileWriter toFile(String pyramid) {
+    private OutputFactory(){}
+    private static OutputFactory outputfactory;
+
+    public static OutputFactory outFacInstance(){
+        if(outputfactory == null){
+            outputfactory = new OutputFactory();
+        }
+        System.out.println("AND went through here");
+        return outputfactory;
+    }
+
+    public MarioFileWriter toFile(String pyramid) {
         return new mToFile();
     }
 
-    public static MarioFileWriter toConsole(String pyramid) {
+    public MarioFileWriter toConsole(String pyramid) {
         return new mToConsole();
     }
 
-    public static MarioFileWriter errorOutput() {
+    public MarioFileWriter errorOutput() {
         return new ErrorOutput();
     }
 

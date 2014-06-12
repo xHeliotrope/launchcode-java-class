@@ -10,13 +10,18 @@ import static java.lang.Integer.parseInt;
 public class Pyramid {
 
     public static String pyramid;
+    private static Output output;
+
+    public Pyramid(Output output){
+        this.output = output;
+        System.out.println("AAAAND went through here");
+    }
 
     public static void pyramidMaker() {
         stepBuilder(inputReader());
         MarioFileWriter mfw = promptUser();
         mfw.outputTriangle(pyramid);
     }
-
 
     public static int inputReader() {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -78,8 +83,8 @@ public class Pyramid {
 
     public static void main(String[] args) {
         pyramidMaker();
-        new Output("to the Console", OutputFactory.toConsole(pyramid));
-        new Output("to a File", OutputFactory.toFile(pyramid));
+        new Output("to the Console", OutputFactory.outFacInstance().toConsole(pyramid));
+        new Output("to a File", OutputFactory.outFacInstance().toFile(pyramid));
 
     }
 }
