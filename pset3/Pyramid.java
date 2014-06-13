@@ -2,9 +2,7 @@
 package pset3;
 
 import java.io.*;
-
 import pset3.marioOutputs.*;
-
 import static java.lang.Integer.parseInt;
 
 public class Pyramid {
