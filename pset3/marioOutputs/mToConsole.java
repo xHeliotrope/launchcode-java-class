@@ -3,7 +3,8 @@ package pset3.marioOutputs;
 
 import pset3.MarioFileWriter;
 
-public class mToConsole implements MarioFileWriter {
+
+public class MToConsole implements MarioFileWriter {
 
     @Override
     public void outputTriangle(String pyramid) {

@@ -6,7 +6,7 @@ import java.io.*;
 import pset3.MarioFileWriter;
 
 
-public class mToFile implements MarioFileWriter {
+public class MToFile implements MarioFileWriter {
 
     @Override
     public void outputTriangle(String pyramid) {
@@ -17,7 +17,7 @@ public class mToFile implements MarioFileWriter {
                         new BufferedReader(new InputStreamReader(System.in));
                 File textFile = new File(br.readLine());
                 try (PrintWriter out = new PrintWriter(textFile.getAbsoluteFile());) {
-                    out.println(pyramid);
+                    System.out.println(pyramid);
                     if (textFile.isFile() && textFile.canRead()) {
                         break;
                     }

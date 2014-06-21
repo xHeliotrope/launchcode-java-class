@@ -1,15 +1,11 @@
 package pset3;
 
 
-/**
- * rmoore8869
- * 6/11/2014
- */
 public class Output {
 
-    public Output(String name, MarioFileWriter newMFW) {
+    public Output(String name, MarioFileWriter newMFW, Pyramid outputPyramid) {
         System.out.println("This is " + name);
-        newMFW.outputTriangle(pyramid);
+        newMFW.outputTriangle(outputPyramid.pyramid);
     }
 
 }
