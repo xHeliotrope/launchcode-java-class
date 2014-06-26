@@ -1,6 +1,8 @@
 package com.rmoore8869.mario4;
 
 import com.rmoore8869.mario4.marioOutputs.*;
+import org.springframework.context.*;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 import java.io.*;
@@ -14,9 +16,8 @@ import static java.lang.Integer.parseInt;
 public class PyramidRun {
 
     public static void main(String[] varArgs) {
-
-        PyramidRun pyramidRun1 = new PyramidRun(outputfactory);
-
+    ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
+    PyramidRun obj = (PyramidRun) context.getBean("marioPyr1");
     }
 
     private static OutputFactory outputfactory = OutputFactory.outFacInstance();
