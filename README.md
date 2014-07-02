@@ -2,31 +2,29 @@ Instructions on how to use sqlite3
 
 
 To view the database navigate to the directory of the database file and type on the command line
-
-sqlite3 metrolink.db
+`sqlite3 metrolink.db`
 
 
 To exit the database type
-
-.exit
+`.exit`
 
 
 To view the schema of the database type
-.schema
+`.schema`
 
 
 To view the schema of a single table type
-.schema {table name}
+`.schema {table name}`
 
 
 # build the database tables
 
-.read metrolink.sql
+`.read metrolink.sql`
 
 
 #import the data
 
-.separator ,
+`.separator ,`
 
 .import trips.txt trips
 
