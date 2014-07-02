@@ -5,10 +5,27 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="marioPyr1" class="com.rmoore8869.mario4.PyramidRun">
-        <constructor-arg name="outputfactory" ref="standardOPFactory"/>
+    <bean id="fullPyramidtoConsole" class="com.rmoore8869.mario4.Pyramid">
+        <property name="pyrSteps" value="23"/>
+        <property name="marioFileWriter" ref="Console"/>
+        <property name="pyramidVisual" value=""/>
+    </bean>
+    <bean id="smallestPyramidtoFile" class="com.rmoore8869.mario4.Pyramid">
+        <property name="pyrSteps" value="1"/>
+        <property name="marioFileWriter" ref="File"/>
+        <property name="pyramidVisual" value=""/>
     </bean>
 
-    <bean id="standardOPFactory" class="com.rmoore8869.mario4.marioOutputs.OutputFactory">
+    <bean id="illegalPyramidtoError" class="com.rmoore8869.mario4.Pyramid">
+        <property name="pyrSteps" value="100"/>
+        <property name="marioFileWriter" ref="Error"/>
+        <property name="pyramidVisual" value=""/>
+    </bean>
+
+    <bean id="Console" class="com.rmoore8869.mario4.marioOutputs.MToConsole">
+    </bean>
+    <bean id="File" class="com.rmoore8869.mario4.marioOutputs.MToFile">
+    </bean>
+    <bean id="Error" class="com.rmoore8869.mario4.marioOutputs.ErrorOutput">
     </bean>
         </beans>

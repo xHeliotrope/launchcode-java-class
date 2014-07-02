@@ -1,27 +1,51 @@
 
 package com.rmoore8869.mario4;
 
-import com.rmoore8869.mario4.marioOutputs.*;
-
-import static com.rmoore8869.mario4.PyramidRun.promptUser;
-
 
 public class Pyramid {
 
-    protected String pyramid;
-    protected OutputFactory opFac1;
+    protected String pyramidVisual;
+    protected int pyrSteps;
+    protected MarioFileWriter mfw;
 
-    public Pyramid(int pyrSteps) {
-        pyramidMaker(pyrSteps);
+    public Pyramid(){}
+
+    public void start() {
+        pyramidVisual = stepBuilder(pyrSteps);
+        pyrStepsChecker(pyrSteps);
+        mfw.outputTriangle(pyramidVisual);
     }
 
-    private void pyramidMaker(int pyrSteps) {
-        stepBuilder(pyrSteps);
-        MarioFileWriter mfw = promptUser();
-        mfw.outputTriangle(pyramid);
+    private void pyrStepsChecker(int pyrSteps) {
+        while (pyrSteps < 0 || pyrSteps > 23) {
+            System.out.println("Pyramid size out of allowable region, zeroing-out this pyramid");
+            pyrSteps=0;
+        }
     }
 
-    private void stepBuilder(int input) {
+    public void setMarioFileWriter(MarioFileWriter mfw){
+        this.mfw = mfw;
+    }
+    public MarioFileWriter getMarioFileWriter(){
+        return mfw;
+    }
+    public void setPyrSteps(int pyrSteps){
+        this.pyrSteps = pyrSteps;
+    }
+    public int getPyrSteps(){
+        return pyrSteps;
+    }
+    public void setPyramidVisual(String pyramidVisual){
+        this.pyramidVisual=pyramidVisual;
+    }
+    public String getPyramidVisual(){
+        return pyramidVisual;
+    }
+
+
+
+
+    private String stepBuilder(int input) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i <= input; i++) {
             int j = i;
@@ -35,14 +59,9 @@ public class Pyramid {
                 k--;
             }
             sb.append(System.getProperty("line.separator"));
-            pyramid = sb.toString();
+            pyramidVisual = sb.toString();
         }
-    }
-
-    public void fullPyramidOutput(Pyramid outputPyramid) {
-        new Output("to the Console", opFac1.toConsole(pyramid), outputPyramid);
-        new Output("to the error", opFac1.errorOutput(), outputPyramid);
-        new Output("to a File", opFac1.toFile(pyramid), outputPyramid);
+        return pyramidVisual;
     }
 
 }

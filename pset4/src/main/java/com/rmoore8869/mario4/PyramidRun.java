@@ -16,19 +16,23 @@ import static java.lang.Integer.parseInt;
 public class PyramidRun {
 
     public static void main(String[] varArgs) {
-    ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
-    PyramidRun obj = (PyramidRun) context.getBean("marioPyr1");
+        ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
+        Pyramid obj1 = (Pyramid) context.getBean("smallestPyramidtoFile");
+        Pyramid obj2 = (Pyramid) context.getBean("fullPyramidtoConsole");
+        Pyramid obj3 = (Pyramid) context.getBean("illegalPyramidtoError");
+        obj2.start();
+        obj1.start();
+        obj3.start();
     }
 
-    private static OutputFactory outputfactory = OutputFactory.outFacInstance();
 
     private static int inputReader() {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
             System.out.println("Please enter an integer between 0 and "
                     + "23(inclusive).");
             try {
-                int inputInt = (parseInt(br.readLine()));
+                int inputInt = (parseInt(input.readLine()));
                 if (inputInt >= 0 && inputInt <= 23) {
                     return inputInt;
                 }
@@ -61,12 +65,4 @@ public class PyramidRun {
             }
         }
     }
-
-    public PyramidRun(OutputFactory outputfactory) {
-        Pyramid newP1 = new Pyramid(inputReader());
-        Pyramid newP2 = new Pyramid(inputReader());
-        new Output("to the Console", outputfactory.toConsole(newP1.pyramid), newP1);
-        new Output("from user choice", promptUser(), newP2);
-    }
-
 }
