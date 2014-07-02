@@ -1,3 +1,11 @@
+# About the St. Louis metrolink data
+
+All of the data is compiled from the GTFS (Google Transit Feed Specification) which is a nationwide format for aggregating transit data.
+
+The data contained in this repository was obtained by the GTFS exchange.  The last update to this repo was September 2013
+
+http://www.gtfs-data-exchange.com/agency/metro-st-louis/
+
 # Instructions on how to use sqlite3
 
 
