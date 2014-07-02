@@ -1,4 +1,4 @@
-Instructions on how to use sqlite3
+# Instructions on how to use sqlite3
 
 
 To view the database navigate to the directory of the database file and type on the command line
