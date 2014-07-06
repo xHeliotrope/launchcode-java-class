@@ -8,7 +8,6 @@ import com.rmoore8869.mario4.MarioFileWriter;
 
 public class MToFile implements MarioFileWriter {
 
-    public MarioFileWriter mfw;
     @Override
     public void outputTriangle(String pyramid) {
         while (true) {
@@ -29,16 +28,6 @@ public class MToFile implements MarioFileWriter {
                 System.out.println("Could not get input");
             }
         }
-    }
-
-    @Override
-    public void setMarioFileWriter(MarioFileWriter mfw) {
-        this.mfw=mfw;
-    }
-
-    @Override
-    public MarioFileWriter getMarioFileWriter() {
-        return mfw;
     }
 
 }

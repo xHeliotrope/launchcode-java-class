@@ -2,48 +2,42 @@
 package com.rmoore8869.mario4;
 
 
+import java.util.concurrent.TimeUnit;
+
+
 public class Pyramid {
 
+    protected int pyramidSteps;
+    protected String pyramidName;
     protected String pyramidVisual;
-    protected int pyrSteps;
     protected MarioFileWriter mfw;
 
-    public Pyramid(){}
-
-    public void start() {
-        pyramidVisual = stepBuilder(pyrSteps);
-        pyrStepsChecker(pyrSteps);
-        mfw.outputTriangle(pyramidVisual);
-    }
-
-    private void pyrStepsChecker(int pyrSteps) {
-        while (pyrSteps < 0 || pyrSteps > 23) {
-            System.out.println("Pyramid size out of allowable region, zeroing-out this pyramid");
-            pyrSteps=0;
-        }
-    }
-
-    public void setMarioFileWriter(MarioFileWriter mfw){
-        this.mfw = mfw;
-    }
-    public MarioFileWriter getMarioFileWriter(){
+    public void setMfw(MarioFileWriter mfw) { this.mfw = mfw; }
+    public MarioFileWriter getMfw() {
         return mfw;
     }
-    public void setPyrSteps(int pyrSteps){
-        this.pyrSteps = pyrSteps;
+    public void setPyramidSteps(int pyrSteps) { this.pyramidSteps = pyrSteps; }
+    public int getPyramidSteps() {
+        return pyramidSteps;
     }
-    public int getPyrSteps(){
-        return pyrSteps;
-    }
-    public void setPyramidVisual(String pyramidVisual){
-        this.pyramidVisual=pyramidVisual;
-    }
-    public String getPyramidVisual(){
-        return pyramidVisual;
+    public void setPyramidName(String pyramidName) { this.pyramidName=pyramidName; }
+    public String getPyramidName() { return pyramidName; }
+
+    protected void constructAndDisplay(){
+        System.out.println("This is " + pyramidName);
+        customWait();
+        pyramidVisual = stepBuilder(pyramidSteps);
+        pyramidStepsDependencyChecker(pyramidSteps);
+        mfw.outputTriangle(pyramidVisual);
+        customWait();
     }
 
-
-
+    private void pyramidStepsDependencyChecker(int pyrSteps) {
+        while (pyrSteps < 0 || pyrSteps > 23) {
+            System.out.println("Zeroing-out this pyramid");
+            pyrSteps = 0;
+        }
+    }
 
     private String stepBuilder(int input) {
         StringBuilder sb = new StringBuilder();
@@ -63,5 +57,8 @@ public class Pyramid {
         }
         return pyramidVisual;
     }
-
+    private void customWait(){
+        try{TimeUnit.SECONDS.sleep(1);}
+        catch(InterruptedException e){System.out.println("Interrupted");}
+    }
 }

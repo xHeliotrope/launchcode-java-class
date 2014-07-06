@@ -6,20 +6,22 @@
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="fullPyramidtoConsole" class="com.rmoore8869.mario4.Pyramid">
-        <property name="pyrSteps" value="23"/>
-        <property name="marioFileWriter" ref="Console"/>
-        <property name="pyramidVisual" value=""/>
+        <property name="pyramidSteps" value="23"/>
+        <property name="mfw" ref="Console"/>
+        <property name="pyramidName" value="the largest possible pyramid."/>
     </bean>
-    <bean id="smallestPyramidtoFile" class="com.rmoore8869.mario4.Pyramid">
-        <property name="pyrSteps" value="1"/>
-        <property name="marioFileWriter" ref="File"/>
-        <property name="pyramidVisual" value=""/>
+    <bean id="smallestPyramidtoConsole" class="com.rmoore8869.mario4.Pyramid">
+        <property name="pyramidSteps" value="1"/>
+        <property name="mfw" ref="Console"/>
+        <property name="pyramidName" value="the smallest possible pyramid."/>
     </bean>
-
     <bean id="illegalPyramidtoError" class="com.rmoore8869.mario4.Pyramid">
-        <property name="pyrSteps" value="100"/>
-        <property name="marioFileWriter" ref="Error"/>
-        <property name="pyramidVisual" value=""/>
+        <property name="pyramidSteps" value="100"/>
+        <property name="mfw" ref="Error"/>
+        <property name="pyramidName" value="not an allowably-sized pyramid."/>
+    </bean>
+    <bean id="undefinedPyramid" class="com.rmoore8869.mario4.Pyramid">
+        <property name="pyramidName" value="a pyramid chosen by the user."/>
     </bean>
 
     <bean id="Console" class="com.rmoore8869.mario4.marioOutputs.MToConsole">

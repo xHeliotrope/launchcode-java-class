@@ -4,8 +4,8 @@ import com.rmoore8869.mario4.marioOutputs.*;
 import org.springframework.context.*;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-
 import java.io.*;
+
 
 import static java.lang.Integer.parseInt;
 
@@ -16,17 +16,39 @@ import static java.lang.Integer.parseInt;
 public class PyramidRun {
 
     public static void main(String[] varArgs) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
-        Pyramid obj1 = (Pyramid) context.getBean("smallestPyramidtoFile");
-        Pyramid obj2 = (Pyramid) context.getBean("fullPyramidtoConsole");
-        Pyramid obj3 = (Pyramid) context.getBean("illegalPyramidtoError");
-        obj2.start();
-        obj1.start();
-        obj3.start();
+        myPredefinedPyramids();
     }
 
+    private static PyramidRun runnerPyramid;
+    private static PyramidRun getInstance(){
+        if(runnerPyramid == null){
+            runnerPyramid = new PyramidRun();
+        }
+        return runnerPyramid;
+    }
 
-    private static int inputReader() {
+    private static void myPredefinedPyramids(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
+        System.out.println("Here are my Pyramids!");
+        Pyramid pyr1 = (Pyramid) context.getBean("undefinedPyramid");
+        Pyramid pyr2 = (Pyramid) context.getBean("fullPyramidtoConsole");
+        Pyramid pyr3 = (Pyramid) context.getBean("smallestPyramidtoConsole");
+        Pyramid pyr4 = (Pyramid) context.getBean("illegalPyramidtoError");
+        PyramidRun pr = runnerPyramid.getInstance();
+        pr.customConstructAndDisplay(pyr1);
+        pyr2.constructAndDisplay();
+        pyr3.constructAndDisplay();
+        pyr4.constructAndDisplay();
+
+    }
+
+    private void customConstructAndDisplay(Pyramid customPyramid){
+        customPyramid.pyramidSteps=inputReader();
+        customPyramid.mfw=promptUser();
+        customPyramid.constructAndDisplay();
+    }
+
+    private int inputReader() {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
             System.out.println("Please enter an integer between 0 and "
@@ -42,7 +64,7 @@ public class PyramidRun {
         }
     }
 
-    static MarioFileWriter promptUser() {
+    private MarioFileWriter promptUser() {
         while (true) {
             String def1 = "Console", def2 = "File";
             System.out.println("Do you want your Mario Pyramid in a file"
