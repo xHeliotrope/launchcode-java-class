@@ -19,30 +19,25 @@ public class PyramidRun {
         myPredefinedPyramids();
     }
 
-    private static PyramidRun runnerPyramid;
-    private static PyramidRun getInstance(){
-        if(runnerPyramid == null){
-            runnerPyramid = new PyramidRun();
-        }
-        return runnerPyramid;
-    }
+    private Pyramid customPyramid;
+    public void setCustomPyramid(Pyramid customPyramid){ this.customPyramid=customPyramid; }
+    public Pyramid getCustomPyramid(){ return customPyramid; }
 
     private static void myPredefinedPyramids(){
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
         System.out.println("Here are my Pyramids!");
-        Pyramid pyr1 = (Pyramid) context.getBean("undefinedPyramid");
-        Pyramid pyr2 = (Pyramid) context.getBean("fullPyramidtoConsole");
-        Pyramid pyr3 = (Pyramid) context.getBean("smallestPyramidtoConsole");
-        Pyramid pyr4 = (Pyramid) context.getBean("illegalPyramidtoError");
-        PyramidRun pr = runnerPyramid.getInstance();
-        pr.customConstructAndDisplay(pyr1);
+        PyramidRun pyrRun1 = (PyramidRun) context.getBean("pyramidRunForCustomPyramid");
+        Pyramid pyr1 = (Pyramid) context.getBean("fullPyramidtoConsole");
+        Pyramid pyr2 = (Pyramid) context.getBean("smallestPyramidtoConsole");
+        Pyramid pyr3 = (Pyramid) context.getBean("illegalPyramidtoError");
+        pyrRun1.customConstructAndDisplay();
+        pyr1.constructAndDisplay();
         pyr2.constructAndDisplay();
         pyr3.constructAndDisplay();
-        pyr4.constructAndDisplay();
 
     }
 
-    private void customConstructAndDisplay(Pyramid customPyramid){
+    private void customConstructAndDisplay(){
         customPyramid.pyramidSteps=inputReader();
         customPyramid.mfw=promptUser();
         customPyramid.constructAndDisplay();
