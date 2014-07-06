@@ -27,10 +27,12 @@ public class PyramidRun {
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
         System.out.println("Here are my Pyramids!");
         PyramidRun pyrRun1 = (PyramidRun) context.getBean("pyramidRunForCustomPyramid");
+        PyramidRun pyrRun2 = (PyramidRun) context.getBean("standardPyramidRun");
         Pyramid pyr1 = (Pyramid) context.getBean("fullPyramidtoConsole");
         Pyramid pyr2 = (Pyramid) context.getBean("smallestPyramidtoConsole");
         Pyramid pyr3 = (Pyramid) context.getBean("illegalPyramidtoError");
         pyrRun1.customConstructAndDisplay();
+        pyrRun2.display();
         pyr1.constructAndDisplay();
         pyr2.constructAndDisplay();
         pyr3.constructAndDisplay();
@@ -40,6 +42,9 @@ public class PyramidRun {
     private void customConstructAndDisplay(){
         customPyramid.pyramidSteps=inputReader();
         customPyramid.mfw=promptUser();
+        customPyramid.constructAndDisplay();
+    }
+    private void display(){
         customPyramid.constructAndDisplay();
     }
 

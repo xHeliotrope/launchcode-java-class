@@ -8,7 +8,9 @@
     <bean id="pyramidRunForCustomPyramid" class="com.rmoore8869.mario4.PyramidRun">
         <property name="customPyramid" ref="undefinedPyramid"/>
     </bean>
-
+    <bean id="standardPyramidRun" class="com.rmoore8869.mario4.PyramidRun">
+        <property name="customPyramid" ref="fullPyramidtoConsole"/>
+    </bean>
     <bean id="fullPyramidtoConsole" class="com.rmoore8869.mario4.Pyramid">
         <property name="pyramidSteps" value="23"/>
         <property name="mfw" ref="Console"/>
