@@ -19,36 +19,16 @@ public class PyramidRun {
         myPredefinedPyramids();
     }
 
-    private Pyramid customPyramid;
-    public void setCustomPyramid(Pyramid customPyramid){ this.customPyramid=customPyramid; }
-    public Pyramid getCustomPyramid(){ return customPyramid; }
-
     private static void myPredefinedPyramids(){
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
         System.out.println("Here are my Pyramids!");
-        PyramidRun pyrRun1 = (PyramidRun) context.getBean("pyramidRunForCustomPyramid");
-        PyramidRun pyrRun2 = (PyramidRun) context.getBean("standardPyramidRun");
-        Pyramid pyr1 = (Pyramid) context.getBean("fullPyramidtoConsole");
-        Pyramid pyr2 = (Pyramid) context.getBean("smallestPyramidtoConsole");
-        Pyramid pyr3 = (Pyramid) context.getBean("illegalPyramidtoError");
-        pyrRun1.customConstructAndDisplay();
-        pyrRun2.display();
-        pyr1.constructAndDisplay();
-        pyr2.constructAndDisplay();
-        pyr3.constructAndDisplay();
-
+        PyramidFactory pf = (PyramidFactory) context.getBean("myPyramidFactory1");
+        pf.createPyramid();
+        pf.createCustomPyramid(intReader(),promptUser(),nameReader());
+        pf.createPyramid();
     }
 
-    private void customConstructAndDisplay(){
-        customPyramid.pyramidSteps=inputReader();
-        customPyramid.mfw=promptUser();
-        customPyramid.constructAndDisplay();
-    }
-    private void display(){
-        customPyramid.constructAndDisplay();
-    }
-
-    private int inputReader() {
+    private static int intReader() {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
             System.out.println("Please enter an integer between 0 and "
@@ -64,7 +44,7 @@ public class PyramidRun {
         }
     }
 
-    private MarioFileWriter promptUser() {
+    private static MarioFileWriter promptUser() {
         while (true) {
             String def1 = "Console", def2 = "File";
             System.out.println("Do you want your Mario Pyramid in a file"
@@ -85,6 +65,17 @@ public class PyramidRun {
             } catch (IOException e) {
                 return new ErrorOutput();
             }
+        }
+    }
+
+    private static String nameReader(){
+        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Please enter the name of your pyramid.");
+        try {
+            String inputString = input.readLine();
+            return inputString;
+        } catch (IOException e) {
+            return("An Error");
         }
     }
 }

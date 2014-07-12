@@ -5,29 +5,29 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="pyramidRunForCustomPyramid" class="com.rmoore8869.mario4.PyramidRun">
-        <property name="customPyramid" ref="undefinedPyramid"/>
+    <bean id="myPyramidFactory1" class="com.rmoore8869.mario4.PyramidFactory">
+        <constructor-arg name="pyramid" ref="largestPyramid"/>
+        <constructor-arg name="mfw" ref="Console"/>
     </bean>
-    <bean id="standardPyramidRun" class="com.rmoore8869.mario4.PyramidRun">
-        <property name="customPyramid" ref="fullPyramidtoConsole"/>
+    <bean id="myPyramidFactory2" class="com.rmoore8869.mario4.PyramidFactory">
+        <constructor-arg name="pyramid" ref="smallestPyramid"/>
+        <constructor-arg name="mfw" ref="Console"/>
     </bean>
-    <bean id="fullPyramidtoConsole" class="com.rmoore8869.mario4.Pyramid">
-        <property name="pyramidSteps" value="23"/>
-        <property name="mfw" ref="Console"/>
-        <property name="pyramidName" value="the largest possible pyramid."/>
+    <bean id="smallestPyramid" class="com.rmoore8869.mario4.Pyramid">
+        <constructor-arg name="pyramidSteps" value="1"/>
+        <constructor-arg name="pyramidName" value="the smallest possible pyramid."/>
     </bean>
-    <bean id="smallestPyramidtoConsole" class="com.rmoore8869.mario4.Pyramid">
-        <property name="pyramidSteps" value="1"/>
-        <property name="mfw" ref="Console"/>
-        <property name="pyramidName" value="the smallest possible pyramid."/>
+    <bean id="illegalPyramid" class="com.rmoore8869.mario4.Pyramid">
+        <constructor-arg name="pyramidSteps" value="100"/>
+        <constructor-arg name="pyramidName" value="not an allowably-sized pyramid."/>
     </bean>
-    <bean id="illegalPyramidtoError" class="com.rmoore8869.mario4.Pyramid">
-        <property name="pyramidSteps" value="100"/>
-        <property name="mfw" ref="Error"/>
-        <property name="pyramidName" value="not an allowably-sized pyramid."/>
+    <bean id="largestPyramid" class="com.rmoore8869.mario4.Pyramid">
+        <constructor-arg name="pyramidSteps" value="23"/>
+        <constructor-arg name="pyramidName" value="the largest possible pyramid."/>
     </bean>
     <bean id="undefinedPyramid" class="com.rmoore8869.mario4.Pyramid">
-        <property name="pyramidName" value="a pyramid chosen by the user."/>
+        <constructor-arg name="pyramidSteps" value="-1"/>
+        <constructor-arg name="pyramidName" value="a pyramid chosen by the user."/>
     </bean>
 
     <bean id="Console" class="com.rmoore8869.mario4.marioOutputs.MToConsole">

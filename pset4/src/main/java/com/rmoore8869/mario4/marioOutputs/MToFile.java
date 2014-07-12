@@ -6,7 +6,7 @@ import java.io.*;
 import com.rmoore8869.mario4.MarioFileWriter;
 
 
-public class MToFile implements MarioFileWriter {
+public final class MToFile implements MarioFileWriter {
 
     @Override
     public void outputTriangle(String pyramid) {
