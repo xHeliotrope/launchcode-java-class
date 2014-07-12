@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+pset1
+=====
+=======
 Java for CS50 students (LaunchCode Edition)
 =============================================
 
@@ -22,3 +26,4 @@ There will be required reading in this course.  There will only be one or two bo
 
 To get started, fork this repository and take a peek in pset1.
 
+>>>>>>> b1d5fc65ca950b81bb35cc1893325a4c228b4c9d
