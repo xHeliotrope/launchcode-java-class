@@ -15,11 +15,11 @@ public class CoinCalculator {
     private String[] names;
     private CoinCurrency coinCurrency;
 
-    private CoinCurrency getCoinCurrency(){
+    private CoinCurrency getCoinCurrency() {
         return coinCurrency;
     }
 
-    public CoinCalculator(CoinCurrency coinCurrency){
+    public CoinCalculator(CoinCurrency coinCurrency) {
         this.coinCurrency = coinCurrency;
     }
 
@@ -41,7 +41,7 @@ public class CoinCalculator {
 
     public void changeCalculator(Double userAmount) {
         decimalAmount = decimalConverter(userAmount);
-        for(int i = coinDenominations.size()-1; i >= 0; i--){
+        for (int i = coinDenominations.size() - 1; i >= 0; i--) {
             minusCoin(coinDenominations.get(i));
         }
     }
@@ -53,12 +53,12 @@ public class CoinCalculator {
             return "";
     }
 
-    private int elementFrequency(int coinType){
-        return Collections.frequency(coinDenominations,coinType)-1;
+    private int elementFrequency(int coinType) {
+        return Collections.frequency(coinDenominations, coinType) - 1;
     }
 
-    private int decimalConverter(double changeAmount){
-        return (int)(changeAmount * 100);
+    private int decimalConverter(double changeAmount) {
+        return (int) (changeAmount * 100);
     }
 
     private void minusCoin(int coinType) {
@@ -68,12 +68,12 @@ public class CoinCalculator {
         }
     }
 
-    private boolean changeDoesNotExist(){
+    private boolean changeDoesNotExist() {
         int totalCoins = 0;
-        for(int i =0; i < coinDenominations.size();i++){
+        for (int i = 0; i < coinDenominations.size(); i++) {
             totalCoins += elementFrequency(coinDenominations.get(i));
-            }
-        if(totalCoins == 0){
+        }
+        if (totalCoins == 0) {
             return true;
         }
         return false;

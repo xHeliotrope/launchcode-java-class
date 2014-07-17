@@ -9,7 +9,9 @@ import java.util.ArrayList;
 public interface CoinCurrency {
     public ArrayList<Integer> coinDenominations = new ArrayList<>();
     public String[] coinNames = new String[coinDenominations.size()];
+
     public ArrayList<Integer> theseCoinDenominations();
+
     public String[] theseCoinNames();
 }
 

@@ -12,21 +12,24 @@ public class European implements CoinCurrency {
     private ArrayList<Integer> coinDenominations = new ArrayList<>();
     private String[] coinNames = new String[coinDenominations.size()];
 
-    private ArrayList<Integer> getCoinDenominations(){
+    private ArrayList<Integer> getCoinDenominations() {
         return coinDenominations;
     }
-    private String[] getCoinNames(){
+
+    private String[] getCoinNames() {
         return coinNames;
     }
 
-    private European(ArrayList<Integer> CoinDenominations, String[] coinNames){
-        this.coinDenominations=CoinDenominations;
-        this.coinNames=coinNames;
+    private European(ArrayList<Integer> CoinDenominations, String[] coinNames) {
+        this.coinDenominations = CoinDenominations;
+        this.coinNames = coinNames;
     }
-    public ArrayList<Integer> theseCoinDenominations(){
+
+    public ArrayList<Integer> theseCoinDenominations() {
         return coinDenominations;
     }
-    public String[] theseCoinNames(){
+
+    public String[] theseCoinNames() {
         return coinNames;
     }
 }

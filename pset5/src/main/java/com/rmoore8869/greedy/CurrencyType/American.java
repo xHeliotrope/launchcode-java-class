@@ -12,21 +12,24 @@ public class American implements CoinCurrency {
     private final ArrayList<Integer> coinDenominations;
     private final String[] coinNames;
 
-    private ArrayList<Integer> getCoinDenominations(){
+    private ArrayList<Integer> getCoinDenominations() {
         return coinDenominations;
     }
-    private String[] getCoinNames(){
+
+    private String[] getCoinNames() {
         return coinNames;
     }
 
-    private American(ArrayList<Integer> CoinDenominations, String[] coinNames){
-        this.coinDenominations=CoinDenominations;
-        this.coinNames=coinNames;
+    private American(ArrayList<Integer> CoinDenominations, String[] coinNames) {
+        this.coinDenominations = CoinDenominations;
+        this.coinNames = coinNames;
     }
-    public ArrayList<Integer> theseCoinDenominations(){
+
+    public ArrayList<Integer> theseCoinDenominations() {
         return coinDenominations;
     }
-    public String[] theseCoinNames(){
+
+    public String[] theseCoinNames() {
         return coinNames;
     }
 
