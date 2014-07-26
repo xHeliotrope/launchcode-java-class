@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="AmericanConverter" class="com.rmoore8869.greedy.CoinCalculator">
+        <constructor-arg name="coinCurrency" ref="AmericanCurrency"/>
+    </bean>
+    <bean id="EuropeanConverter" class="com.rmoore8869.greedy.CoinCalculator">
+        <constructor-arg name="coinCurrency" ref="EuropeanCurrency"/>
+    </bean>
+    <bean id="AmericanCurrency" class="com.rmoore8869.greedy.CurrencyType.American">
+        <constructor-arg ref="AmericanCoinList"/>
+        <constructor-arg ref="AmericanNames"/>
+    </bean>
+
+    <util:list id="AmericanCoinList" value-type="java.lang.Integer">
+        <value>1</value>
+        <value>5</value>
+        <value>10</value>
+        <value>25</value>
+        <value>50</value>
+        <value>100</value>
+    </util:list>
+
+    <util:list id="AmericanNames" value-type="java.lang.String">
+        <value>Penny</value>
+        <value>Nickel</value>
+        <value>Dime</value>
+        <value>Quarter</value>
+        <value>Half-Dollar</value>
+        <value>Dollar</value>
+    </util:list>
+
+    <bean id="EuropeanCurrency" class="com.rmoore8869.greedy.CurrencyType.European">
+        <constructor-arg ref="EuropeanCoinList"/>
+        <constructor-arg ref="EuropeanNames"/>
+    </bean>
+
+    <util:list id="EuropeanCoinList" value-type="java.lang.Integer">
+        <value>1</value>
+        <value>2</value>
+        <value>5</value>
+        <value>10</value>
+        <value>20</value>
+        <value>50</value>
+        <value>100</value>
+        <value>200</value>
+    </util:list>
+
+    <util:list id="EuropeanNames" value-type="java.lang.String">
+        <value>EURO Cent</value>
+        <value>EURO 2 Cent</value>
+        <value>EURO 5 Cent</value>
+        <value>EURO 10 Cent</value>
+        <value>EURO 20 Cent</value>
+        <value>EURO 50 Cent</value>
+        <value>EURO</value>
+        <value>2 EURO</value>
+    </util:list>
+</beans>
