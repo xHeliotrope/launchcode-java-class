@@ -24,11 +24,11 @@ public class PyramidRun {
         System.out.println("Here are my Pyramids!");
         PyramidFactory pf = (PyramidFactory) context.getBean("myPyramidFactory1");
         pf.createPyramid();
-        pf.createCustomPyramid(intReader(),promptUser(),nameReader());
-        pf.createPyramid();
+        pf.createCustomPyramid(userSize(),userOutput(),userName());
+        pf.createCustomPyramid(userSize(),userOutput(),userName());
     }
 
-    private static int intReader() {
+    private static int userSize() {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
             System.out.println("Please enter an integer between 0 and "
@@ -44,7 +44,7 @@ public class PyramidRun {
         }
     }
 
-    private static MarioFileWriter promptUser() {
+    private static MarioFileWriter userOutput() {
         while (true) {
             String def1 = "Console", def2 = "File";
             System.out.println("Do you want your Mario Pyramid in a file"
@@ -68,7 +68,7 @@ public class PyramidRun {
         }
     }
 
-    private static String nameReader(){
+    private static String userName(){
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Please enter the name of your pyramid.");
         try {
