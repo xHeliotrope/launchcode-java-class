@@ -43,9 +43,6 @@ public class MetroLinkJDBC {
         } catch (ClassNotFoundException |SQLException e2){
             e2.printStackTrace();
         }
-        finally{
-            System.out.println("Connection process finished.");
-        }
         throw new IllegalStateException();
     }
 

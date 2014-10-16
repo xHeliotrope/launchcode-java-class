@@ -1,9 +1,12 @@
 package com.xheliotrope;
 
 import com.xheliotrope.ListTools.*;
+import org.apache.log4j.Logger;
+
 import java.util.*;
 
 public class MetroLinkDaoFactory {
+    private static Logger log = Logger.getLogger(MetroLinkDaoFactory.class.toString());
     private TimeCalculator timeCalculator;
     private ListConverter listConverter;
 
@@ -27,6 +30,9 @@ public class MetroLinkDaoFactory {
     public void printNextMetro(List<Integer> stopTimes){
         int waitTime = timeCalculator.nextMetro(stopTimes);
         print(waitTime);
+    }
+    public int nextMetroTime(List<Integer> stopTimes){
+        return timeCalculator.nextMetro(stopTimes);
     }
 
     private void print(int waitTime){

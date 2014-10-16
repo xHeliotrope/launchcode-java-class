@@ -2,9 +2,12 @@ package com.xheliotrope.ListTools;
 
 import java.sql.Timestamp;
 import java.util.*;
+
+import org.apache.log4j.Logger;
 import org.joda.time.DateTime;
 
-public class TimeCalculator {
+public final class TimeCalculator {
+    private static Logger log = Logger.getLogger(TimeCalculator.class.toString());
 
     private TimeCalculator() {}
 

@@ -1,10 +1,12 @@
 package com.xheliotrope.ListTools;
 
 import com.xheliotrope.DAO.MetroStop;
+import org.apache.log4j.Logger;
 
 import java.util.*;
 
-public class ListConverter {
+public final class ListConverter {
+    private static Logger log = Logger.getLogger(ListConverter.class.toString());
 
     private List<Integer> stopTimesInMinutes;
     private List<MetroStop> stops;
